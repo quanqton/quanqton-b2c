@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QuanQton Ocean Salt — Preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ── MOBILE OVERLAY + MENU ── -->
+<div class="menu-overlay" id="menuOverlay"></div>
+<nav class="mobile-menu" id="mobileMenu">
+  <a href="#inicio">Início</a>
+  <a href="#historia">Nossa História</a>
+  <a href="#produtos">Produtos</a>
+  <a href="#beneficios">Benefícios</a>
+  <a href="#faq">FAQ</a>
+  <a href="#produtos" class="btn btn-primary" style="margin-top:16px">Comprar Agora</a>
+</nav>
+
+<!-- ── HEADER ── -->
+<header id="site-header">
+  <div class="container">
+    <div class="header-inner">
+      <a href="#" class="site-logo">
+        <svg width="42" height="42" viewBox="0 0 42 42" fill="none">
+          <circle cx="21" cy="21" r="20" stroke="#2a7fff" stroke-width="1.5"/>
+          <circle cx="21" cy="21" r="10" fill="#1a5fd4" opacity="0.4"/>
+          <circle cx="21" cy="21" r="5" fill="#2a7fff"/>
+          <path d="M21 4 Q28 12 21 21 Q14 12 21 4Z" fill="#2a7fff" opacity="0.6"/>
+          <path d="M38 21 Q30 28 21 21 Q30 14 38 21Z" fill="#2a7fff" opacity="0.4"/>
+        </svg>
+        <span class="logo-text">QUANQTON</span>
+      </a>
+      <nav class="main-nav">
+        <a href="#inicio">Início</a>
+        <a href="#historia">Nossa História</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#beneficios">Benefícios</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="header-actions">
+        <button class="cart-icon-btn" id="cartToggle" aria-label="Carrinho">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+          </svg>
+          <span class="cart-count">0</span>
+        </button>
+        <a href="#produtos" class="btn btn-primary" style="padding:10px 20px;font-size:.85rem">Comprar Agora</a>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ── CART DRAWER ── -->
+<div class="cart-drawer-overlay" id="cartOverlay"></div>
+<aside class="cart-drawer" id="cartDrawer">
+  <div class="cart-header">
+    <h3>🛒 Seu Carrinho</h3>
+    <button class="cart-close" id="cartClose">✕</button>
+  </div>
+  <div class="cart-items" id="cartItems">
+    <div class="cart-empty">
+      <div class="empty-icon">🧂</div>
+      <p>Seu carrinho está vazio.</p>
+    </div>
+  </div>
+  <div class="cart-footer">
+    <div class="cart-subtotal">
+      <span>Subtotal</span>
+      <strong class="cart-subtotal-amount">R$ 0,00</strong>
+    </div>
+    <div class="cart-actions">
+      <a href="page-checkout.php" class="btn-checkout">Finalizar Compra →</a>
+      <button class="btn-continue" id="cartContinue">← Continuar Comprando</button>
+    </div>
+  </div>
+</aside>
+
+<main id="main-content">
+
+<!-- ═══════════════════════════════════════
+     HERO
+═══════════════════════════════════════ -->
+<section id="inicio" style="min-height:100vh;position:relative;display:flex;align-items:center;overflow:hidden;background:radial-gradient(ellipse at 20% 50%,#0a2a5e,#030810 60%),radial-gradient(ellipse at 80% 20%,#0d1f4a,transparent 60%);padding:120px 0 80px">
+  <div class="particles" id="particles"></div>
+  <div class="container" style="position:relative;z-index:2;width:100%">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <span class="section-label fade-in">O SAL DO OCEANO • DESDE 2016</span>
+        <h1 class="hero-headline fade-in fade-in-delay-1">QUANQTON<br>OCEAN<br>SALT</h1>
+        <p class="hero-subline fade-in fade-in-delay-2">O Sal Perfeito</p>
+        <p class="hero-body fade-in fade-in-delay-2">O sal marinho integral que desperta sua vitalidade natural. Mais de <strong style="color:var(--sky)">83 minerais essenciais</strong> direto da fonte mais pura: o mar.</p>
+        <div class="hero-stats fade-in fade-in-delay-3">
+          <span class="stat-item">⚗️ 83+ Minerais</span>
+          <span class="stat-item">🌿 100% Natural</span>
+          <span class="stat-item">📅 Desde 2016</span>
+          <span class="stat-item">🚫 Sem Refino</span>
+        </div>
+        <div class="hero-ctas fade-in fade-in-delay-3">
+          <a href="#produtos" class="btn btn-primary btn-lg">Garantir Meu Sal Perfeito</a>
+          <a href="#historia" class="btn btn-outline btn-lg">Nossa História</a>
+        </div>
+        <div class="urgency-badge fade-in fade-in-delay-4">15% OFF com cupom <strong style="margin-left:8px;letter-spacing:.1em">QUANQTON15</strong></div>
+      </div>
+      <div class="hero-visual fade-in fade-in-delay-2">
+        <div class="product-mockup">
+          <div class="product-mockup-icon">🌊</div>
+          <div class="product-mockup-label">QUANQTON<br>OCEAN SALT</div>
+          <div class="product-mockup-sub">SAL MARINHO INTEGRAL<br>83+ Minerais Essenciais</div>
+          <div style="width:80px;height:1px;background:rgba(42,127,255,.4);position:relative;z-index:1"></div>
+          <div class="product-mockup-sub" style="color:var(--gold)">★★★★★ 4.9/5</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SOCIAL PROOF MARQUEE
+═══════════════════════════════════════ -->
+<section id="social-proof">
+  <div class="marquee-wrapper">
+    <div class="marquee-track">
+      <span class="marquee-item"><strong>⚡</strong>95,7% relataram mais energia</span>
+      <span class="marquee-item"><strong>⭐</strong>★★★★★ 4.9/5 de avaliação</span>
+      <span class="marquee-item"><strong>👨‍👩‍👧‍👦</strong>Mais de 10.000 famílias atendidas</span>
+      <span class="marquee-item"><strong>🚚</strong>Entrega para todo o Brasil</span>
+      <span class="marquee-item"><strong>🔬</strong>83+ minerais essenciais por colher</span>
+      <span class="marquee-item"><strong>🌿</strong>Zero aditivos químicos</span>
+      <span class="marquee-item"><strong>💚</strong>Satisfação garantida ou reembolso</span>
+      <span class="marquee-item"><strong>🏆</strong>Produto mais indicado por nutricionistas</span>
+      <!-- duplicate for loop -->
+      <span class="marquee-item"><strong>⚡</strong>95,7% relataram mais energia</span>
+      <span class="marquee-item"><strong>⭐</strong>★★★★★ 4.9/5 de avaliação</span>
+      <span class="marquee-item"><strong>👨‍👩‍👧‍👦</strong>Mais de 10.000 famílias atendidas</span>
+      <span class="marquee-item"><strong>🚚</strong>Entrega para todo o Brasil</span>
+      <span class="marquee-item"><strong>🔬</strong>83+ minerais essenciais por colher</span>
+      <span class="marquee-item"><strong>🌿</strong>Zero aditivos químicos</span>
+      <span class="marquee-item"><strong>💚</strong>Satisfação garantida ou reembolso</span>
+      <span class="marquee-item"><strong>🏆</strong>Produto mais indicado por nutricionistas</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     PROBLEMA
+═══════════════════════════════════════ -->
+<section id="problema">
+  <div class="container">
+    <span class="section-label" style="text-align:center;display:block">O PROBLEMA</span>
+    <h2 class="fade-in">VOCÊ DEVE TER OUVIDO<br>POR AÍ QUE SAL FAZ MAL.</h2>
+    <div class="problem-cards">
+      <div class="problem-card fade-in"><div class="card-icon">😴</div><h3>Cansaço e inchaço?</h3><p>Pode ser falta de minerais. Quando o corpo não recebe os eletrólitos que precisa, a energia cai e os tecidos retêm líquido.</p></div>
+      <div class="problem-card fade-in fade-in-delay-1"><div class="card-icon">⚗️</div><h3>O sal refinado remove 99% dos minerais essenciais</h3><p>O processo industrial extrai quase toda a riqueza mineral, deixando apenas cloreto de sódio — e adicionando antiagregantes químicos.</p></div>
+      <div class="problem-card fade-in fade-in-delay-2"><div class="card-icon">🔋</div><h3>Sem minerais, o corpo perde força e desacelera</h3><p>Magnésio, potássio, cálcio e mais 80 minerais são fundamentais para cada célula funcionar. A deficiência silenciosa sabota sua vitalidade.</p></div>
+    </div>
+    <p class="problem-transition fade-in">"A gente entendeu o recado. E resolveu mostrar o contrário."</p>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     HISTÓRIA
+═══════════════════════════════════════ -->
+<section id="historia">
+  <div class="container">
+    <div class="story-grid">
+      <div class="story-portrait fade-in">
+        <div class="portrait-frame">
+          <div class="portrait-icon">🧬</div>
+          <div class="portrait-caption">René Quinton<br>(1866–1925)<br>Pai da Terapia Marinha</div>
+        </div>
+      </div>
+      <div class="story-copy">
+        <span class="section-label fade-in">NOSSA HISTÓRIA</span>
+        <h2 style="text-align:left" class="fade-in">A Origem do Sal QuanQton</h2>
+        <div class="pull-quote fade-in">"Nossa filha de 5 anos havia sido desenganada pela medicina. Foi então que tudo mudou."</div>
+        <p class="author-credit fade-in">— Fabiano Isopo, fundador da QuanQton</p>
+        <p class="fade-in" style="margin-top:24px">Em 2014, Fabiano Isopo e sua esposa receberam um diagnóstico devastador sobre a saúde da filha. Na busca por alternativas, encontrou os estudos do fisiologista francês <strong style="color:var(--white)">René Quinton</strong>, que demonstrou que a composição mineral da água do mar é notavelmente similar ao plasma sanguíneo humano.</p>
+        <p class="fade-in" style="margin-top:16px">Em <strong style="color:var(--sky)">2016</strong>, nasceu a QuanQton Ocean Salt — com o compromisso de oferecer ao Brasil um sal marinho verdadeiramente integral, colhido de forma sustentável. Hoje, mais de <strong style="color:var(--white)">10.000 famílias</strong> já descobriram a diferença.</p>
+        <div class="quinton-box fade-in">
+          <h4>🔬 René Quinton — Pai da Terapia Marinha</h4>
+          <p>Fisiologista francês que provou que o equilíbrio mineral da água do mar é a chave para a vitalidade humana. O plasma sanguíneo e a água do mar compartilham uma composição extraordinariamente semelhante.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     BENEFÍCIOS
+═══════════════════════════════════════ -->
+<section id="beneficios">
+  <div class="container">
+    <span class="section-label" style="text-align:center;display:block">CIÊNCIA + NATUREZA</span>
+    <h2 class="fade-in">POR QUE O SAL QUANQTON<br>É DIFERENTE</h2>
+    <div class="benefit-cards">
+      <div class="benefit-card fade-in"><div class="benefit-icon">⚗️</div><div><h3>83+ Minerais Essenciais</h3><p>Cada grama contém a riqueza completa do oceano: sódio, magnésio, potássio, cálcio, cobre, zinco e mais 77 oligominerais que seu corpo reconhece e absorve naturalmente.</p></div></div>
+      <div class="benefit-card fade-in fade-in-delay-1"><div class="benefit-icon">🚫</div><div><h3>Zero Refino Químico</h3><p>Sem branqueamento, sem antiagregantes, sem iodo artificial. Apenas sal marinho colhido, lavado com água do mar e seco ao sol e ao vento.</p></div></div>
+      <div class="benefit-card fade-in fade-in-delay-2"><div class="benefit-icon">💪</div><div><h3>Rico em Magnésio e Potássio</h3><p>Dois minerais críticos que 70% dos brasileiros consomem em quantidade insuficiente. Essenciais para músculos, coração, nervos e equilíbrio hídrico.</p></div></div>
+      <div class="benefit-card fade-in fade-in-delay-3"><div class="benefit-icon">⚡</div><div><h3>Energia Vital desde a 1ª semana</h3><p>95,7% dos nossos clientes relatam perceber diferença em energia, foco e disposição já na primeira semana de uso.</p></div></div>
+    </div>
+    <div class="comparison-wrap fade-in">
+      <table class="comparison-table">
+        <thead><tr><th>Característica</th><th class="quanqton-col">QuanQton 🏆</th><th>Sal Refinado</th><th>Sal Rosa Himalaia</th></tr></thead>
+        <tbody>
+          <tr><td>Quantidade de minerais</td><td class="quanqton-col">83+ minerais</td><td>1–2 minerais</td><td>80+ minerais</td></tr>
+          <tr><td>Processo</td><td class="quanqton-col">Natural / Solar</td><td>Industrial / Químico</td><td>Mineração terrestre</td></tr>
+          <tr><td>Magnésio</td><td class="quanqton-col"><span class="check">✓ Alto</span></td><td><span class="cross">✗ Removido</span></td><td><span class="check">✓ Médio</span></td></tr>
+          <tr><td>Potássio</td><td class="quanqton-col"><span class="check">✓ Alto</span></td><td><span class="cross">✗ Removido</span></td><td><span class="check">✓ Médio</span></td></tr>
+          <tr><td>Recomendação nutricional</td><td class="quanqton-col"><span class="check">✓✓✓</span></td><td><span class="cross">✗</span></td><td><span class="check">✓✓</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     PRODUTOS
+═══════════════════════════════════════ -->
+<section id="produtos">
+  <div class="container">
+    <span class="section-label" style="text-align:center;display:block">NOSSA LINHA COMPLETA</span>
+    <h2 class="fade-in">ESCOLHA SEU SAL PERFEITO</h2>
+
+    <div class="products-group">
+      <div class="products-group-title fade-in">🌊 Sal Perfeito Integral</div>
+      <div class="product-grid">
+        <div class="product-card fade-in"><div class="product-img"><div class="product-img-icon">🌊</div><div class="product-img-label">QUANQTON</div></div><div class="product-info"><div class="product-name">Sal Perfeito Integral</div><div class="product-weight">250g</div><div class="product-price"><small>R$ </small>26,00</div><button class="btn-add-cart" data-product-id="101" data-product-name="Sal Perfeito Integral 250g" data-product-price="R$ 26,00">Adicionar ao Carrinho</button></div></div>
+        <div class="product-card fade-in fade-in-delay-1"><div class="product-img"><div class="product-img-icon">🌊</div><div class="product-img-label">QUANQTON</div></div><div class="product-info"><div class="product-name">Sal Perfeito Integral</div><div class="product-weight">500g</div><div class="product-price"><small>R$ </small>39,50</div><button class="btn-add-cart" data-product-id="102" data-product-name="Sal Perfeito Integral 500g" data-product-price="R$ 39,50">Adicionar ao Carrinho</button></div></div>
+        <div class="product-card fade-in fade-in-delay-2"><div class="product-img"><div class="product-img-icon">🌊</div><div class="product-img-label">QUANQTON</div></div><div class="product-info"><div class="product-name">Sal Perfeito Integral</div><div class="product-weight">1kg</div><div class="product-price"><small>R$ </small>62,00</div><button class="btn-add-cart" data-product-id="103" data-product-name="Sal Perfeito Integral 1kg" data-product-price="R$ 62,00">Adicionar ao Carrinho</button></div></div>
+        <div class="product-card fade-in fade-in-delay-3" style="position:relative"><span class="product-badge">Mais Vendido</span><div style="position:absolute;bottom:0;left:0;width:100%;background:linear-gradient(90deg,#1a5fd4,#2a7fff);color:#fff;font-size:.7rem;font-weight:700;padding:5px 12px;text-align:center;z-index:2">⭐ Melhor Custo-Benefício</div><div class="product-img"><div class="product-img-icon">🌊</div><div class="product-img-label">QUANQTON</div></div><div class="product-info"><div class="product-name">Sal Perfeito Integral</div><div class="product-weight">2kg</div><div class="product-price"><small>R$ </small>89,00</div><button class="btn-add-cart" data-product-id="104" data-product-name="Sal Perfeito Integral 2kg" data-product-price="R$ 89,00">Adicionar ao Carrinho</button></div></div>
+      </div>
+    </div>
+
+    <div class="products-group">
+      <div class="products-group-title fade-in">🔥 Sal de Churrasco</div>
+      <div class="product-grid">
+        <div class="product-card fade-in"><div class="product-img" style="background:linear-gradient(145deg,#2a7fff22,#061428)"><div class="product-img-icon">🔥</div><div class="product-img-label">QUANQTON</div></div><div class="product-info"><div class="product-name">Sal de Churrasco</div><div class="product-weight">250g</div><div class="product-price"><small>R$ </small>26,00</div><button class="btn-add-cart" data-product-id="201" data-product-name="Sal de Churrasco 250g" data-product-price="R$ 26,00">Adicionar ao Carrinho</button></div></div>
+        <div class="product-card fade-in fade-in-delay-1"><div class="product-img" style="background:linear-gradient(145deg,#2a7fff22,#061428)"><div class="product-img-icon">🔥</div><div class="product-img-label">QUANQTON</div></div><div class="product-info"><div class="product-name">Sal de Churrasco</div><div class="product-weight">500g</div><div class="product-price"><small>R$ </small>39,50</div><button class="btn-add-cart" data-product-id="202" data-product-name="Sal de Churrasco 500g" data-product-price="R$ 39,50">Adicionar ao Carrinho</button></div></div>
+        <div class="product-card fade-in fade-in-delay-2"><div class="product-img" style="background:linear-gradient(145deg,#2a7fff22,#061428)"><div class="product-img-icon">🔥</div><div class="product-img-label">QUANQTON</div></div><div class="product-info"><div class="product-name">Sal de Churrasco</div><div class="product-weight">1kg</div><div class="product-price"><small>R$ </small>62,00</div><button class="btn-add-cart" data-product-id="203" data-product-name="Sal de Churrasco 1kg" data-product-price="R$ 62,00">Adicionar ao Carrinho</button></div></div>
+        <div class="product-card fade-in fade-in-delay-3"><span class="product-badge">Popular</span><div class="product-img" style="background:linear-gradient(145deg,#2a7fff22,#061428)"><div class="product-img-icon">🔥</div><div class="product-img-label">QUANQTON</div></div><div class="product-info"><div class="product-name">Sal de Churrasco</div><div class="product-weight">2kg</div><div class="product-price"><small>R$ </small>89,00</div><button class="btn-add-cart" data-product-id="204" data-product-name="Sal de Churrasco 2kg" data-product-price="R$ 89,00">Adicionar ao Carrinho</button></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     DEPOIMENTOS
+═══════════════════════════════════════ -->
+<section id="depoimentos">
+  <div class="container">
+    <span class="section-label" style="text-align:center;display:block">DEPOIMENTOS REAIS</span>
+    <h2 class="fade-in">O QUE NOSSOS CLIENTES DIZEM</h2>
+    <div class="testimonial-grid">
+      <div class="testimonial-card fade-in"><div class="stars">★★★★★</div><p class="testimonial-text">"Senti mais clareza e energia logo nas primeiras manhãs! Meu corpo desinchou bastante. Não acreditava que o sal faria tanta diferença."</p><div class="testimonial-author"><div class="avatar">M</div><div><div class="author-name">Marlene Souza</div><div class="author-tag">São Paulo, SP • Cliente há 8 meses</div></div></div></div>
+      <div class="testimonial-card fade-in fade-in-delay-1"><div class="stars">★★★★★</div><p class="testimonial-text">"Nunca imaginei que trocar o sal faria tanta diferença na minha disposição diária. Treino mais forte, recupero mais rápido."</p><div class="testimonial-author"><div class="avatar">C</div><div><div class="author-name">Carlos Mendes</div><div class="author-tag">Belo Horizonte, MG • Cliente há 1 ano</div></div></div></div>
+      <div class="testimonial-card fade-in fade-in-delay-2"><div class="stars">★★★★★</div><p class="testimonial-text">"Uso há 3 meses e não volto mais para o sal comum. Minha família toda já converteu. A diferença no sabor e no corpo é notável."</p><div class="testimonial-author"><div class="avatar">A</div><div><div class="author-name">Ana Paula Ribeiro</div><div class="author-tag">Curitiba, PR • Cliente há 3 meses</div></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     FAQ
+═══════════════════════════════════════ -->
+<section id="faq">
+  <div class="container">
+    <span class="section-label" style="text-align:center;display:block">TIRE SUAS DÚVIDAS</span>
+    <h2 class="fade-in">PERGUNTAS FREQUENTES</h2>
+    <div class="faq-list">
+      <div class="faq-item fade-in open"><button class="faq-question" aria-expanded="true">O QuanQton realmente tem 83+ minerais?<span class="faq-icon">+</span></button><div class="faq-answer" style="max-height:400px;padding:0 24px 22px"><p>Sim. O sal marinho integral preserva todos os minerais naturalmente presentes na água do mar: sódio, magnésio, potássio, cálcio, cobre, zinco, selênio e mais 76 oligominerais. Nossa análise laboratorial confirma a presença de 83 minerais mensuráveis por grama.</p></div></div>
+      <div class="faq-item fade-in fade-in-delay-1"><button class="faq-question" aria-expanded="false">Qual a diferença do sal QuanQton para o sal rosa do Himalaia?<span class="faq-icon">+</span></button><div class="faq-answer"><p>O sal rosa do Himalaia é de origem terrestre (mineração), não marinha. O QuanQton vem do Oceano Atlântico e mantém a composição mineral que nosso plasma sanguíneo reconhece naturalmente — conforme demonstrado por René Quinton.</p></div></div>
+      <div class="faq-item fade-in fade-in-delay-2"><button class="faq-question" aria-expanded="false">Posso usar na mesma quantidade que o sal normal?<span class="faq-icon">+</span></button><div class="faq-answer"><p>Sim. É uma substituição 1:1, mas você vai perceber que uma pitada menor já é suficiente pois o sabor é mais rico. Seu paladar se ajustará naturalmente.</p></div></div>
+      <div class="faq-item fade-in fade-in-delay-3"><button class="faq-question" aria-expanded="false">Qual tamanho é mais indicado para começar?<span class="faq-icon">+</span></button><div class="faq-answer"><p>Recomendamos o pacote de 500g para experimentar. Para quem já conhece, o pacote de 2kg é o melhor custo-benefício.</p></div></div>
+      <div class="faq-item fade-in fade-in-delay-4"><button class="faq-question" aria-expanded="false">Quanto tempo para sentir os benefícios?<span class="faq-icon">+</span></button><div class="faq-answer"><p>95,7% dos clientes relatam perceber diferença já na primeira semana — principalmente em energia, qualidade do sono e redução de inchaço.</p></div></div>
+      <div class="faq-item fade-in"><button class="faq-question" aria-expanded="false">O sal QuanQton tem validade?<span class="faq-icon">+</span></button><div class="faq-answer"><p>Indicamos consumo em até 24 meses após a data de colheita impressa na embalagem. Guarde em local seco, longe de umidade e luz direta.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     FINAL CTA
+═══════════════════════════════════════ -->
+<section id="cta-final">
+  <div class="container" style="position:relative;z-index:1">
+    <span class="section-label" style="text-align:center;display:block;margin-bottom:20px">OFERTA ESPECIAL</span>
+    <h2 class="fade-in">EXPERIMENTE O VERDADEIRO<br>SAL INTEGRAL</h2>
+    <p class="fade-in" style="text-align:center;margin-bottom:40px">Mais energia, menos inchaço, melhor digestão — desde a primeira semana</p>
+    <div style="display:flex;justify-content:center;margin-bottom:40px" class="fade-in">
+      <div class="coupon-box"><span class="coupon-label">Use o cupom</span><span class="coupon-code">QUANQTON15</span><span class="coupon-label">e ganhe 15% OFF</span></div>
+    </div>
+    <div style="text-align:center;margin-bottom:48px" class="fade-in">
+      <a href="#produtos" class="btn btn-primary btn-lg">GARANTIR MEU SAL AGORA →</a>
+    </div>
+    <div class="trust-badges fade-in">
+      <div class="trust-badge"><span class="badge-icon">🚚</span>Frete grátis acima R$150</div>
+      <div class="trust-badge"><span class="badge-icon">🔒</span>Pagamento seguro</div>
+      <div class="trust-badge"><span class="badge-icon">✅</span>Satisfação garantida</div>
+      <div class="trust-badge"><span class="badge-icon">🌿</span>Produto 100% natural</div>
+      <div class="trust-badge"><span class="badge-icon">📦</span>Embalagem premium</div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ── FOOTER ── -->
+<footer id="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="site-logo">
+          <svg width="36" height="36" viewBox="0 0 42 42" fill="none"><circle cx="21" cy="21" r="20" stroke="#2a7fff" stroke-width="1.5"/><circle cx="21" cy="21" r="10" fill="#1a5fd4" opacity="0.4"/><circle cx="21" cy="21" r="5" fill="#2a7fff"/><path d="M21 4 Q28 12 21 21 Q14 12 21 4Z" fill="#2a7fff" opacity="0.6"/></svg>
+          <span class="logo-text">QUANQTON</span>
+        </div>
+        <p>O Sal Perfeito — Sal marinho integral com 83+ minerais essenciais, direto da fonte mais pura: o mar.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+          <a href="#" class="social-link" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+          <a href="#" class="social-link" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#historia">Nossa História</a></li>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Política de Privacidade</a></li>
+          <li><a href="#">Termos de Uso</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p style="color:var(--silver)">© 2025 QuanQton Ocean Salt. Todos os direitos reservados.</p>
+      <p style="color:var(--silver);font-size:.8rem">CNPJ: 00.000.000/0001-00 · Brasil</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

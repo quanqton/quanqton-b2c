@@ -1,0 +1,152 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-bg: #061428;
+  --color-brand-navy: #091e3d;
+  --color-brand-surface: #0a2a5e;
+  --color-brand-blue: #0055ff;
+  --color-brand-sky: #2997ff;
+  --color-brand-silver: #a1a1a6;
+  --color-brand-gold: #f5e1a4;
+  --color-brand-danger: #ff3b30;
+
+  --font-display: var(--font-bebas-neue), sans-serif;
+  --font-body: var(--font-outfit), sans-serif;
+  --font-accent: var(--font-cormorant), serif;
+
+  --radius-DEFAULT: 12px;
+  --radius-sm: 6px;
+
+  --animate-float: float 8s linear infinite;
+  --animate-spin-slow: spin 8s linear infinite;
+  --animate-marquee: marquee 30s linear infinite;
+  --animate-breathe: breathe 6s ease-in-out infinite;
+
+  @keyframes float {
+    0% {
+      transform: translateY(100vh) rotate(0deg);
+      opacity: 0;
+    }
+
+    10% {
+      opacity: 1;
+    }
+
+    90% {
+      opacity: 1;
+    }
+
+    100% {
+      transform: translateY(-100px) rotate(720deg);
+      opacity: 0;
+    }
+  }
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  @keyframes breathe {
+
+    0%,
+    100% {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(1.03);
+    }
+  }
+}
+
+@layer base {
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+  }
+
+  body {
+    @apply bg-brand-bg text-white font-body;
+    line-height: 1.6;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display tracking-widest leading-[1.1];
+  }
+
+  h1 {
+    font-size: clamp(3rem, 8vw, 7rem);
+  }
+
+  h2 {
+    font-size: clamp(2rem, 5vw, 4rem);
+    @apply text-center mb-[60px];
+  }
+
+  h3 {
+    font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+  }
+
+  p {
+    @apply text-brand-silver text-[1.05rem];
+  }
+
+  section {
+    @apply py-[100px];
+  }
+}
+
+@layer components {
+  .container-custom {
+    width: min(1200px, 90%);
+    /* Voltei pra 90% para evitar telas quebrando */
+    margin-inline: auto;
+    padding-inline: clamp(2rem, 5vw, 4rem);
+    /* Garante que as bordas NUNCA grudem */
+  }
+
+  .section-label {
+    @apply font-body text-[0.8rem] tracking-[0.2em] uppercase text-brand-sky block mb-3;
+  }
+
+  .btn,
+  .btn-primary,
+  .btn-outline {
+    @apply inline-flex items-center justify-center px-8 py-[14px] rounded font-body font-semibold tracking-wider text-base whitespace-nowrap transition-transform duration-300;
+  }
+
+  .btn-primary {
+    @apply bg-gradient-to-br from-brand-blue to-brand-sky text-white hover:-translate-y-0.5;
+    box-shadow: 0 0 24px rgba(42, 127, 255, 0.4);
+  }
+
+  .btn-primary:hover {
+    box-shadow: 0 0 40px rgba(42, 127, 255, 0.7);
+  }
+
+  .btn-outline {
+    @apply bg-transparent text-white border-2 border-white/30 hover:border-brand-sky hover:bg-brand-sky/10;
+  }
+
+  .btn-lg {
+    @apply px-11 py-[18px] text-[1.1rem];
+  }
+}

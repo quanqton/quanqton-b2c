@@ -1,0 +1,7 @@
+# Ignorar tudo na raiz
+/*
+
+# Exceto estas pastas e arquivos
+!.gitignore
+!quanqton-frontend/
+!quanqton-theme/
