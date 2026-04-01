@@ -3,5 +3,6 @@
 
 # Exceto estas pastas e arquivos
 !.gitignore
+!README.md
 !quanqton-frontend/
 !quanqton-theme/
