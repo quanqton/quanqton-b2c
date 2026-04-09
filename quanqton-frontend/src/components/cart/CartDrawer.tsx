@@ -80,6 +80,13 @@ export default function CartDrawer() {
                         <strong className="font-display text-2xl text-white tracking-wider">{formatCurrency(getCartTotal())}</strong>
                     </div>
                     <div className="flex flex-col gap-3">
+                        <div className="p-3 mb-1 mt-1 rounded-lg bg-[#00D4FF]/10 border border-[#00D4FF]/20 relative overflow-hidden">
+                            <div className="absolute top-0 left-0 w-1 h-full bg-[#00D4FF]"></div>
+                            <p className="text-[#00D4FF] text-[10px] font-bold mb-0.5 uppercase tracking-wide">📦 Frete Bonificado</p>
+                            <p className="text-white/70 text-[11px] leading-tight flex items-start gap-1">
+                                O valor do seu frete volta na caixa em produto!
+                            </p>
+                        </div>
                         <button
                             onClick={handleCheckout}
                             disabled={items.length === 0 || isCheckingOut}

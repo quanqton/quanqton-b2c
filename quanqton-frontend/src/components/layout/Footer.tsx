@@ -30,20 +30,22 @@ export default function Footer() {
                     <div>
                         <h4 className="font-body text-[0.8rem] uppercase tracking-[0.15em] text-brand-sky mb-4">Navegação</h4>
                         <ul className="flex flex-col gap-2">
-                            <li><Link href="#historia" className="text-[0.9rem] text-brand-silver hover:text-white transition-colors">Nossa Origem</Link></li>
-                            <li><Link href="#problema" className="text-[0.9rem] text-brand-silver hover:text-white transition-colors">O Problema</Link></li>
-                            <li><Link href="#beneficios" className="text-[0.9rem] text-brand-silver hover:text-white transition-colors">Por que QuanQton</Link></li>
-                            <li><Link href="#produtos" className="text-[0.9rem] text-brand-silver hover:text-white transition-colors">Produtos</Link></li>
-                            <li><Link href="#faq" className="text-[0.9rem] text-brand-silver hover:text-white transition-colors">Dúvidas Frequentes</Link></li>
+                            <li><Link href="/#historia" className="text-[0.9rem] text-brand-silver hover:text-white transition-colors">Nossa Origem</Link></li>
+                            <li><Link href="/#problema" className="text-[0.9rem] text-brand-silver hover:text-white transition-colors">O Problema</Link></li>
+                            <li><Link href="/#beneficios" className="text-[0.9rem] text-brand-silver hover:text-white transition-colors">Por que QuanQton</Link></li>
+                            <li><Link href="/#produtos" className="text-[0.9rem] text-brand-silver hover:text-white transition-colors">Produtos</Link></li>
+                            <li><Link href="/#faq" className="text-[0.9rem] text-brand-silver hover:text-white transition-colors">Dúvidas Frequentes</Link></li>
                         </ul>
                     </div>
 
                     <div>
                         <h4 className="font-body text-[0.8rem] uppercase tracking-[0.15em] text-brand-sky mb-4">Legal</h4>
                         <ul className="flex flex-col gap-2">
-                            <li><Link href="/politica-de-privacidade" className="text-[0.9rem] text-brand-silver hover:text-white transition-colors">Política de Privacidade e Trocas</Link></li>
-                            <li><Link href="/politica-de-frete" className="text-[0.9rem] text-brand-silver hover:text-white transition-colors">Política de Frete e Rastreio</Link></li>
-                            <li><a href="/laudo.pdf" target="_blank" className="text-[0.9rem] text-brand-silver hover:text-white transition-colors">Ver laudo TECPAR (PDF)</a></li>
+                            <li><Link href="/politica-de-privacidade" className="text-[0.9rem] text-brand-silver hover:text-white transition-colors">Política de Privacidade</Link></li>
+                            <li><Link href="/termos-de-uso" className="text-[0.9rem] text-brand-silver hover:text-white transition-colors">Termos de Uso</Link></li>
+                            <li><Link href="/politica-de-frete" className="text-[0.9rem] text-brand-silver hover:text-white transition-colors">Política de Fretes</Link></li>
+                            <li><Link href="/rastreamento" className="text-[0.9rem] text-brand-silver hover:text-white transition-colors">Rastrear Pedido</Link></li>
+                            <li><a href="/laudo.pdf" target="_blank" className="text-[0.9rem] text-brand-silver hover:text-white transition-colors">Ver LAUDO Técnico (PDF)</a></li>
                         </ul>
                     </div>
                 </div>

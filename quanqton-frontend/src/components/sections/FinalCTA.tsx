@@ -45,7 +45,7 @@ export default function FinalCTA() {
                         </div>
                         <div className="flex items-center gap-1.5 text-[0.8rem] text-brand-silver">
                             <span className="w-1.5 h-1.5 rounded-full bg-brand-sky/40"></span>
-                            <span>Produto 100% natural</span>
+                            <span className="font-bold text-brand-sky">Frete bonificado garantido</span>
                         </div>
                         <div className="flex items-center gap-1.5 text-[0.8rem] text-brand-silver">
                             <span className="w-1.5 h-1.5 rounded-full bg-brand-sky/40"></span>

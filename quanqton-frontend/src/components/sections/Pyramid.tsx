@@ -8,15 +8,15 @@ export default function Pyramid() {
             <div className="absolute top-0 inset-x-0 h-px w-full bg-gradient-to-r from-transparent via-brand-sky/10 to-transparent"></div>
             <div className="container-custom relative z-10">
                 <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] gap-12 lg:gap-20 items-start relative pb-10">
-                    
+
                     <div className="lg:sticky lg:top-[120px] w-full self-start">
                         <FadeIn direction="right">
-                            <div className="relative aspect-square md:aspect-[4/3] w-full rounded-3xl overflow-hidden border border-white/10 shadow-[0_20px_60px_rgba(42,127,255,0.15)] bg-white/[0.02]">
+                            <div className="relative aspect-[4/5] w-full rounded-3xl overflow-hidden border border-white/10 shadow-[0_20px_60px_rgba(42,127,255,0.15)] bg-white/[0.02]">
                                 <Image
                                     src="/pyramid.png"
                                     alt="Pirâmide de Sal QuanQton"
                                     fill
-                                    className="object-cover"
+                                    className="object-contain"
                                 />
                             </div>
                         </FadeIn>
@@ -28,7 +28,7 @@ export default function Pyramid() {
                             <h2 className="mb-6">O Formato Geométrico Perfeito</h2>
 
                             <p className="text-[1.05rem] mb-6">
-                                O Sal Integral QuanQton <strong className="text-white">cristaliza-se naturalmente em formato de pirâmide oca.</strong>
+                                O Sal Integral QuanQton <strong className="text-white">cristaliza-se naturalmente em formato de pirâmide.</strong>
                             </p>
 
                             <p className="mb-6 text-brand-silver">

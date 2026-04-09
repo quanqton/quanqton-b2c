@@ -6,12 +6,24 @@ import { clsx } from 'clsx'
 
 const faqs = [
     {
+        question: "Como funciona o Frete Bonificado?",
+        answer: "Na QuanQton, o frete nunca é um custo perdido. O valor que você paga pelo frete volta em produto — enviado junto com o seu pedido. Pagou R$30 de frete? Recebe um pacote de 250g junto na caixa."
+    },
+    {
         question: "Por que o Sal QuanQton é úmido?",
-        answer: "A umidade é a prova da sua pureza. Diferente do sal refinado, que é seco artificialmente em fornos a 600°C, nosso sal é seco naturalmente ao sol e ao vento. Essa umidade residual (cerca de 5 a 8%) é a água do próprio oceano, essencial para manter a estrutura viva dos mais de 84+ minerais intacta."
+        answer: "A umidade é a prova da sua pureza. Diferente do sal refinado, que é seco artificialmente em fornos a 600°C, nosso sal é seco naturalmente ao sol e ao vento. Essa umidade residual (cerca de 5 a 8%) é a água do próprio oceano, essencial para manter a estrutura viva dos mais de 80+ minerais intacta."
+    },
+    {
+        question: "Como é feito o processo de colheita?",
+        answer: "Nossa colheita é feita de forma 100% artesanal na superfície evaporada através da ação única do Sol e do Vento. Sem processos industriais de refinamento, sem fornos ardentes e sem lavagem por solventes químicos. Exatamente como a natureza ditou o processo com todo o tempo do mundo."
     },
     {
         question: "O Sal QuanQton contém iodo?",
         answer: "Sim, mas apenas o iodo naturalmente presente na água do mar (cerca de 1,5mg a 2mg por quilo). Não adicionamos iodo sintético (iodato de potássio), que é obrigatório por lei apenas para o sal refinado cloretado. Como o Sal QuanQton é classificado como Sal Marinho Integral Artesanal, ele mantém sua matriz original."
+    },
+    {
+        question: "O que são os cristais em formato de pirâmide?",
+        answer: "Esse é o formato natural e milagroso em que o verdadeiro sal do oceano limpo cristaliza mediante ação passiva do sol e do vento. Ao invés dos grãos duros do sal moído ou de rocha, esse cristal forma finas paredes geométricas que dissolvem instântaneamente com uma explosão crocante de sabor ao paladar."
     },
     {
         question: "Crianças e hipertensos podem consumir?",
@@ -19,11 +31,11 @@ const faqs = [
     },
     {
         question: "Qual a diferença para o Sal do Himalaia?",
-        answer: "O Sal do Himalaia é extraído de minas terrestres (rocha) através de explosões e mineração pesada, podendo conter metais pesados insolúveis. O Sal QuanQton é colhido na superfície, de forma sustentável, a partir do oceano atual - a fonte mais biodisponível de minerais para o plasma humano."
+        answer: "O Sal do Himalaia é extraído de minas terrestres (rocha) através de explosões e mineração pesada, podendo conter flúor em alta concentração e metais pesados ferrosos insolúveis. O Sal QuanQton é colhido na superfície, de forma sustentável, a partir do majestoso Oceano Atlântico - a fonte mais biodisponível de plasma natural para o corpo humano do planeta."
     },
     {
-        question: "Como armazenar para não empedrar?",
-        answer: "Como não usamos antiagregantes químicos (como o ferrocianeto de sódio), é natural que o sal aglomere levemente. Mantenha em recipiente de vidro ou cerâmica, preferencialmente fechado. Se empedrar, basta desfazer com os dedos ou com uma colher - os cristais são frágeis."
+        question: "Como posso ver o LAUDO completo?",
+        answer: "Nossa transparência é total. O LAUDO técnico oficial (Nº 2084/25) confirmando a ausência de microplásticos e os altíssimos picos de Magnésio e 80+ minerais em nossa extração encontra-se permanentemente fixado para download público em formato [PDF] e acessível em nosso site."
     }
 ]
 

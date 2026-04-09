@@ -19,7 +19,7 @@ export default function SocialProof() {
               Zero refino, zero aditivos
             </span>
             <span className="inline-flex items-center px-12 font-body text-[0.9rem] font-medium text-brand-silver border-r border-white/10">
-              Laudo TECPAR certificado
+              LAUDO Oficial certificado
             </span>
             <span className="inline-flex items-center px-12 font-body text-[0.9rem] font-medium text-brand-silver border-r border-white/10">
               Satisfação garantida
@@ -38,7 +38,7 @@ export default function SocialProof() {
               Zero refino, zero aditivos
             </span>
             <span className="inline-flex items-center px-12 font-body text-[0.9rem] font-medium text-brand-silver border-r border-white/10">
-              Laudo TECPAR certificado
+              LAUDO Oficial certificado
             </span>
             <span className="inline-flex items-center px-12 font-body text-[0.9rem] font-medium text-brand-silver border-r border-white/10">
               Satisfação garantida

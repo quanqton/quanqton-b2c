@@ -47,7 +47,7 @@ export default function Story() {
                             </p>
 
                             <p className="mb-4">
-                                Em 2014, nossa filha Luisa, de 5 anos, foi diagnosticada com uma doença autoimune. O tratamento proposto: medicação para o resto da vida.
+                                Em 2014, nossa família recebeu um diagnóstico que mudou tudo. O tratamento proposto: medicação para o resto da vida.
                             </p>
 
                             <p className="mb-4">
@@ -73,7 +73,7 @@ export default function Story() {
                                     René Quinton - A Base Científica
                                 </h4>
                                 <p className="text-[0.95rem]">
-                                    Quinton demonstrou que a composição mineral do Oceano Atlântico - sódio, magnésio, potássio, cálcio, cloretos e mais de 75 elementos traço - replica de forma extraordinária o ambiente interno das nossas células. Seus estudos são a base científica que inspira a QuanQton desde o primeiro dia.
+                                    Quinton demonstrou que a composição mineral do Oceano Atlântico - sódio, magnésio, potássio, cálcio, cloretos e mais de 79 elementos traço - replica de forma extraordinária o ambiente interno das nossas células. Seus estudos são a base científica que inspira a QuanQton desde o primeiro dia.
                                 </p>
                             </div>
                         </FadeIn>

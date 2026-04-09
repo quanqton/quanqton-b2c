@@ -2,9 +2,19 @@ import FadeIn from '../ui/FadeIn'
 
 export default function Problem() {
     return (
-        <section id="problema" className="bg-brand-navy border-t border-white/5 relative">
-            <div className="absolute top-0 inset-x-0 h-px w-full bg-gradient-to-r from-transparent via-brand-sky/20 to-transparent"></div>
-            <div className="container-custom relative z-10">
+        <section id="problema" className="bg-brand-navy border-t border-white/5 relative overflow-hidden">
+            <div className="absolute top-0 inset-x-0 h-px w-full bg-gradient-to-r from-transparent via-brand-sky/20 to-transparent z-[3]"></div>
+            
+            {/* Background Parallax */}
+            <div 
+                className="absolute inset-0 z-0 bg-cover bg-center bg-scroll md:bg-fixed"
+                style={{ backgroundImage: "url('/oceano.jpg')" }}
+            ></div>
+
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-[rgba(7,19,31,0.85)] z-[1]"></div>
+
+            <div className="container-custom relative z-[2] py-20 lg:py-32">
                 <FadeIn>
                     <span className="section-label !text-center">O PROBLEMA</span>
                     <h2 className="text-white text-[clamp(2rem,4vw,3rem)] mb-12 max-w-4xl mx-auto text-center leading-tight">
@@ -26,7 +36,7 @@ export default function Problem() {
                     <FadeIn delay={0.3}>
                         <p>
                             O que sobra no pacote branco é basicamente cloreto de sódio puro.<br />
-                            O que sobra no seu corpo é a falta de 84 elementos que ele precisava.
+                            O que sobra no seu corpo é a falta de 80+ elementos que ele precisava.
                         </p>
                     </FadeIn>
                     <FadeIn delay={0.4}>

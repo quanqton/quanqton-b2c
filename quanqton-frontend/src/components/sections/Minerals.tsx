@@ -17,7 +17,7 @@ const minerals = [
         activeBg: 'bg-[#5b8fb9]/10',
         tagColor: 'text-[#a8c4e0]',
         image: '/mineral-sodio.png',
-        amount: '38% por amostra (Laudo TECPAR nº 2084/25)',
+        amount: '38% por amostra (LAUDO nº 2084/25)',
         headline: 'Sódio - o eletrólito que regula tudo',
         description: 'O sódio é essencial para o equilíbrio hídrico, a transmissão nervosa e a contração muscular. No sal marinho integral, o sódio vem acompanhado dos minerais que o corpo precisa para metabolizá-lo adequadamente - diferente do sal refinado, onde chega isolado e sobrecarrega os rins.',
     },
@@ -31,7 +31,7 @@ const minerals = [
         activeBg: 'bg-[#4caf50]/10',
         tagColor: 'text-[#a5d6a7]',
         image: '/mineral-magnesio.png',
-        amount: '0,020% por amostra (Laudo TECPAR nº 2084/25)',
+        amount: '0,020% por amostra (LAUDO nº 2084/25)',
         headline: 'Magnésio - o mineral que 7 em cada 10 brasileiros não recebem o suficiente',
         description: 'Cofator em mais de 300 reações que o seu corpo realiza a cada segundo. Da contração muscular ao sono profundo, da regulação do açúcar no sangue ao equilíbrio do sistema nervoso. O magnésio marinho do QuanQton é biodisponível - o corpo o reconhece porque vem na mesma forma que existe no plasma sanguíneo.',
     },
@@ -45,7 +45,7 @@ const minerals = [
         activeBg: 'bg-[#e91e8c]/10',
         tagColor: 'text-[#f48fb1]',
         image: '/mineral-potassio.png',
-        amount: '0,046% por amostra (Laudo TECPAR nº 2084/25)',
+        amount: '0,046% por amostra (LAUDO nº 2084/25)',
         headline: 'Potássio - o contrapeso natural do sódio',
         description: 'Essencial para a pressão arterial, a função cardíaca e o equilíbrio hídrico. O potássio e o sódio trabalham em par - quando um está em excesso e o outro falta, o corpo descompensa. No QuanQton, chegam juntos, na proporção que o oceano estabeleceu.',
     },
@@ -59,7 +59,7 @@ const minerals = [
         activeBg: 'bg-[#f9a825]/10',
         tagColor: 'text-[#ffe082]',
         image: '/mineral-calcio.png',
-        amount: '0,080% por amostra (Laudo TECPAR nº 2084/25)',
+        amount: '0,080% por amostra (LAUDO nº 2084/25)',
         headline: 'Cálcio - além dos ossos',
         description: 'Fundamental para a coagulação sanguínea, a transmissão nervosa e o ritmo cardíaco. Mais de 99% do cálcio do corpo está nos ossos - mas o 1% restante é o que mantém o coração batendo no ritmo certo. No sal marinho integral, o cálcio vem na forma de cloreto e sulfato de cálcio, absorvidos naturalmente pelo organismo.',
     },
@@ -73,7 +73,7 @@ const minerals = [
         activeBg: 'bg-[#00bcd4]/10',
         tagColor: 'text-[#80deea]',
         image: '/mineral-cloreto.png',
-        amount: '98,5g/100g por amostra (Laudo TECPAR nº 2084/25)',
+        amount: '98,5g/100g por amostra (LAUDO nº 2084/25)',
         headline: 'Cloretos - o eletrólito esquecido',
         description: 'Trabalha com o sódio e o potássio para manter o equilíbrio ácido-base do sangue e auxiliar na produção do ácido clorídrico - essencial para a digestão. No sal marinho integral, os cloretos chegam na forma de cloreto de sódio e cloreto de magnésio, em equilíbrio natural com os demais minerais.',
     },
@@ -350,7 +350,7 @@ export default function Minerals() {
                             </div>
 
                             <p className="text-[0.85rem] text-brand-silver/60 max-w-[600px] mt-6">
-                                Os resultados acima são da análise conduzida pelo TECPAR - Instituto de Tecnologia do Paraná, laboratório acreditado pelo INMETRO. Laudo nº 2084/25.
+                                Os resultados acima representam análises de laboratório especializado e oficial, creditado pelo INMETRO. LAUDO nº 2084/25.
                             </p>
                         </div>
                     </div>

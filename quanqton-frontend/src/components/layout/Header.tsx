@@ -57,7 +57,7 @@ export default function Header() {
         <header
             className={clsx(
                 'fixed top-0 left-0 w-full z-50 flex justify-center transition-all duration-300 px-4',
-                scrolled ? 'pt-4' : 'pt-10'  // Moved from pt-8 to pt-10 to give logo more space
+                scrolled ? 'pt-0' : 'pt-10'  // Fica mais colado (zero padding) ao rolar
             )}
         >
             <div className="relative w-full max-w-[1000px] flex items-end h-[90px] mb-2 px-2 xl:px-0">
@@ -76,7 +76,7 @@ export default function Header() {
                     <div
                         className={clsx(
                             "absolute inset-0 w-full h-full backdrop-blur-[24px] transition-colors duration-500",
-                            scrolled ? "bg-white/20" : "bg-white/5"
+                            scrolled ? "bg-[#07131f]/95" : "bg-[#07131f]"
                         )}
                         style={{ WebkitMaskImage: 'url(#glass-mask)', maskImage: 'url(#glass-mask)' }}
                     />

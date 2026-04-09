@@ -3,7 +3,7 @@ import MobileMenu from '@/components/layout/MobileMenu'
 import Footer from '@/components/layout/Footer'
 import CartDrawer from '@/components/cart/CartDrawer'
 
-import SalScrollAnimation from '@/components/SalScrollAnimation'
+import HeroSection from '@/components/sections/HeroSection'
 import SocialProof from '@/components/sections/SocialProof'
 import Story from '@/components/sections/Story'
 import Testimonials from '@/components/sections/Testimonials'
@@ -24,10 +24,9 @@ export default function Home() {
       <CartDrawer />
 
       <main className="overflow-clip w-full px-0 mx-0 bg-[var(--deep)]">
-        <SalScrollAnimation />
+        <HeroSection />
 
-        {/* Next Sections Slide OVER the Hero Scroll Animation */}
-        <div className="relative z-20 bg-[var(--deep)] -mt-[100vh] shadow-[0_-20px_50px_rgba(0,0,0,0.5)]">
+        <div className="relative z-20 bg-[var(--deep)]">
           <SocialProof />
           <Story />
           <Testimonials />
